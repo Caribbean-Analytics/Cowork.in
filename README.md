@@ -13,11 +13,11 @@ Las empresas que prestarán el servicio de alquiler para espacios de trabajo pue
 Planeamos hacer una aplicacion web porque a diferencia de las personas "customer/cliente", las empresas son entidades mas profesionales que usualmente no usan un solo dispositivo movil, si no que cuentan con departamentos especializados que les facilita realizar estos tramites con justificacion. La aplicacion web hoy en dia permite escalarse tambien a hace dispostivos moviles, por eso hemos tomado esta decision.
 
 # Analisis
-*Objetivo General
+*Objetivo General*
 Dar a conocer informacion a las empresas que necesitan un espacio de trabajo
-*Objetivo especifico
+*Objetivo especifico*
 El objetivo es conectar a empresas que requieren un espacio de trabajo con empresas que ya cuentan con las instalaciones y quieren alquilarlas 
-*Justificacion
+*Justificacion*
 Hoy en dia existen muchas empresas alrededor del mundo que en ocasiones requieren realizar viajes de negocios para reunirse con sus socios, sin embargo hemos notado no existen plataformas que permitan alquilar espacios de trabajo de diferentes dueños en un mismo lugar que cuentan con los servicios necesarios para satisfacer sus demandas como conexion a internet, mobibiliarios y una excelente ubicacion.
-*Impacto
+*Impacto*
 Se pretende que en esta aplicacion cubra una necesidad que hoy en dia empresas como Airbnb no han considerado dentro de su modelo de negocio, en este caso el modelo B2B, nos referimos a empresas que presten servicios alquiler a otras empresas en un mismo lugar.
