@@ -10,16 +10,21 @@ Podemos hacer una analogía con el modelo de negocio de Airbnb pero en esta ocas
 Las empresas que prestarán el servicio de alquiler para espacios de trabajo pueden darse de alta en la plataforma como socios y publicar sus inmuebles y precio de estos espacios respectivos, y las empresas que buscan alquilar esos espacios pueden integrarse registrandose y filtrar por el tipo de espacio de trabajo que ellos buscan por su ubicación, disponibilidad y precio, por ejemplo. 
 
 # Web o Movil
-Planeamos hacer una aplicacion web porque a diferencia de las personas "customer/cliente", las empresas son entidades mas profesionales que usualmente no usan un solo dispositivo movil, si no que cuentan con departamentos especializados que les facilita realizar estos tramites con justificacion. La aplicacion web hoy en dia permite escalarse tambien a hace dispostivos moviles, por eso hemos tomado esta decision.
+Es una aplicacion web.
+
+*¿Porque?* 
+A diferencia de una persona, las empresas son entidades más profesionales que usualmente no usan un solo dispositivo móvil, si no que cuentan con departamentos especializados que les facilita realizar estos trámites con justificación.
 
 # Analisis
 *Objetivo General*
 
-Dar a conocer informacion a las empresas que necesitan un espacio de trabajo
+Nuestro objetivo principal es facilitar a las empresas un espacio de trabajo donde ellos se sientan seguros, cómodos y lograr cumplir todas las necesidades que esta presenta. Y para el propietario es que él pueda adquirir una rentabilidad superior a la establecida como departamento, además de lograr una inserción en el mercado rápida y efectiva, dando a conocer nuestro servicio.
+
 
 *Objetivo especifico*
 
-El objetivo es conectar a empresas que requieren un espacio de trabajo con empresas que ya cuentan con las instalaciones y quieren alquilarlas 
+- Realizar un estudio del sector y del mercado para estimar la demanda y potencial del mercado al que va dirigido la idea de negocio.
+- Determinar elementos técnicos, tecnológicos y los procesos necesarios para la implementación de esta aplicacion web.
 
 *Justificacion*
 
