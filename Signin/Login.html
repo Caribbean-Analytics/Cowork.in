@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Login;
+		--web-view-id: Login;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Login;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Login {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Login;
+		--web-view-id: Login;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Grupo_387 {
+		position: absolute;
+		width: 1963px;
+		height: 1104px;
+		left: -16px;
+		top: -19px;
+		overflow: visible;
+	}
+	#Fondo2 {
+		position: absolute;
+		width: 1963px;
+		height: 1104px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Grupo_357 {
+		position: absolute;
+		width: 1700px;
+		height: 155px;
+		left: 138px;
+		top: 50px;
+		overflow: visible;
+	}
+	#Repetir_cuadr_cula_1 {
+		position: absolute;
+		width: 457px;
+		height: 155px;
+		left: 0px;
+		top: 0px;
+		overflow: hidden;
+	}
+	#Repetir_cuadr_cula_1_0 {
+		position: absolute;
+		width: 457px;
+		height: 155px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#OnWorkOnly {
+		position: absolute;
+		left: 220px;
+		top: 63px;
+		overflow: visible;
+		width: 238px;
+		white-space: nowrap;
+		line-height: 50px;
+		margin-top: -5px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.3px;
+	}
+	#Logo1 {
+		position: absolute;
+		width: 219px;
+		height: 155px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Grupo_348 {
+		position: absolute;
+		width: 927px;
+		height: 70px;
+		left: 773px;
+		top: 39px;
+		overflow: visible;
+	}
+	#navbar {
+		position: absolute;
+		width: 648px;
+		height: 24px;
+		left: 0px;
+		top: 23px;
+		overflow: visible;
+	}
+	#menu_center {
+		position: absolute;
+		width: 648px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Home {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 64px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Index.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#_Quienes_somos_ {
+		position: absolute;
+		left: 123px;
+		top: 0px;
+		overflow: visible;
+		width: 181px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: _Qui_nes_somos_.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Catalogo {
+		position: absolute;
+		left: 363px;
+		top: 0px;
+		overflow: visible;
+		width: 94px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Catalogo.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Contactanos {
+		position: absolute;
+		left: 517px;
+		top: 0px;
+		overflow: visible;
+		width: 132px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Contactanos.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	.Rect_ngulo_177 {
+		filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 273px;
+		height: 130px;
+		left: 714px;
+		top: 0px;
+	}
+	#Publica_tu_lugar {
+		position: absolute;
+		left: 1507px;
+		top: 62px;
+		overflow: visible;
+		width: 175px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Publicatulugar.html;
+		cursor: pointer;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(245,245,245,1);
+		letter-spacing: 0.3px;
+	}
+	#Enmascarar_grupo_1 {
+		opacity: 0.21;
+		position: absolute;
+		width: 2033px;
+		height: 1152px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Grupo_347 {
+		position: absolute;
+		width: 644px;
+		height: 182px;
+		left: 638px;
+		top: 311px;
+		overflow: visible;
+	}
+	#content {
+		position: absolute;
+		width: 644px;
+		height: 182px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Bienvenido_a_OWO {
+		position: absolute;
+		left: 96px;
+		top: 0px;
+		overflow: visible;
+		width: 459px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 48px;
+		color: rgba(255,255,255,1);
+	}
+	#El_lugar_que_facilita_la_b_squ {
+		position: absolute;
+		left: 0px;
+		top: 58px;
+		overflow: visible;
+		width: 645px;
+		height: 124px;
+		line-height: 36px;
+		margin-top: -6px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		color: rgba(255,255,255,1);
+	}
+	#Aun_no_tienes_cuenta__Sign_up {
+		position: absolute;
+		left: 931px;
+		top: 745px;
+		overflow: visible;
+		width: 308px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Creacuenta.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Grupo_398 {
+		position: absolute;
+		width: 446.452px;
+		height: 80px;
+		left: 736.391px;
+		top: 634.539px;
+		overflow: visible;
+	}
+	.Trazado_9 {
+		filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.078));
+		overflow: visible;
+		position: absolute;
+		width: 566.452px;
+		height: 200px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#PASSWORD {
+		position: absolute;
+		left: 31.609px;
+		top: 30.461px;
+		overflow: visible;
+		width: 91px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,1);
+		letter-spacing: 0.5px;
+	}
+	#FORGET_ {
+		opacity: 0.3;
+		position: absolute;
+		left: 342.609px;
+		top: 30.461px;
+		overflow: visible;
+		width: 72px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(112,112,112,1);
+		letter-spacing: 0.5px;
+	}
+	#Grupo_399 {
+		position: absolute;
+		width: 446.842px;
+		height: 80.243px;
+		left: 737px;
+		top: 539.757px;
+		overflow: visible;
+	}
+	.Trazado_8 {
+		filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.078));
+		overflow: visible;
+		position: absolute;
+		width: 566.452px;
+		height: 200px;
+		left: 0.391px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#EMAIL {
+		opacity: 0.5;
+		position: absolute;
+		left: 32px;
+		top: 8.243px;
+		overflow: visible;
+		width: 49px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(0,0,0,1);
+		letter-spacing: 0.5px;
+	}
+	.Rect_ngulo_4 {
+		position: absolute;
+		overflow: visible;
+		width: 6px;
+		height: 80px;
+		left: 0px;
+		top: 0.243px;
+	}
+	#Grupo_400 {
+		position: absolute;
+		width: 113.385px;
+		height: 29.016px;
+		left: 737px;
+		top: 740px;
+		overflow: visible;
+	}
+	#LOGIN {
+		position: absolute;
+		left: 0px;
+		top: 2px;
+		overflow: visible;
+		width: 72px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.5px;
+	}
+	#login {
+		position: absolute;
+		width: 29.016px;
+		height: 29.016px;
+		left: 84.369px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Grupo_5 {
+		position: absolute;
+		width: 29.016px;
+		height: 29.016px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Grupo_4 {
+		position: absolute;
+		width: 29.016px;
+		height: 29.016px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Trazado_10 {
+		overflow: visible;
+		position: absolute;
+		width: 19.344px;
+		height: 29.016px;
+		left: 9.672px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Trazado_11 {
+		overflow: visible;
+		position: absolute;
+		width: 21.762px;
+		height: 14.508px;
+		left: 0px;
+		top: 7.254px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+</style>
+</head>
+<body>
+<div id="Login">
+	<div id="Grupo_387">
+		<img id="Fondo2" src="Fondo2.png" srcset="Fondo2.png 1x, Fondo2@2x.png 2x">
+		<div id="Grupo_357">
+			<div id="Repetir_cuadr_cula_1">
+				<div id="Repetir_cuadr_cula_1_0">
+					<div id="OnWorkOnly">
+						<span>OnWorkOnly</span>
+					</div>
+					<img id="Logo1" src="Logo1.png" srcset="Logo1.png 1x, Logo1@2x.png 2x">
+				</div>
+			</div>
+			<div id="Grupo_348">
+				<div id="navbar">
+					<div id="menu_center">
+						<div onclick="application.goToTargetView(event)" id="Home">
+							<span>Home</span>
+						</div>
+						<div onclick="application.goToTargetView(event)" id="_Quienes_somos_">
+							<span>¿Quienes somos?</span>
+						</div>
+						<div onclick="application.goToTargetView(event)" id="Catalogo">
+							<span>Catalogo</span>
+						</div>
+						<div onclick="application.goToTargetView(event)" id="Contactanos">
+							<span>Contactanos</span>
+						</div>
+					</div>
+				</div>
+				<svg class="Rect_ngulo_177">
+					<rect fill="rgba(48,164,233,1)" id="Rect_ngulo_177" rx="5" ry="5" x="0" y="0" width="213" height="70">
+					</rect>
+				</svg>
+			</div>
+			<div onclick="application.goToTargetView(event)" id="Publica_tu_lugar">
+				<span>Publica tu lugar</span>
+			</div>
+		</div>
+	</div>
+	<div id="Enmascarar_grupo_1">
+	<svg style="width:inherit;height:inherit;overflow:visible;">
+		<rect fill="url(#Enmascarar_grupo_1_d_pattern)" width="100%" height="100%"></rect>
+			<pattern elementId="Enmascarar_grupo_1_d" id="Enmascarar_grupo_1_d_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="0" width="100%" height="100%" href="Enmascarar_grupo_1_d_pattern.png" xlink:href="Enmascarar_grupo_1_d_pattern.png"></image>
+			</pattern>
+			</svg>
+		</div>
+	<div id="Grupo_347">
+		<div id="content">
+			<div id="Bienvenido_a_OWO">
+				<span>Bienvenido a OWO</span>
+			</div>
+			<div id="El_lugar_que_facilita_la_b_squ">
+				<span>El lugar que facilita la búsqueda y el arrendamiento de  espacios de uso comercial para las pequeñas y medianas empresas.</span>
+			</div>
+		</div>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Aun_no_tienes_cuenta__Sign_up">
+		<span>Aun no tienes cuenta? Sign up</span>
+	</div>
+	<div id="Grupo_398">
+		<svg class="Trazado_9" viewBox="0 0 446.452 80">
+			<path fill="rgba(255,255,255,1)" id="Trazado_9" d="M 0 0 L 446.4515991210938 0 L 446.4515991210938 79.99999237060547 L 0 79.99999237060547 L 0 0 Z">
+			</path>
+		</svg>
+		<div id="PASSWORD">
+			<span>PASSWORD</span>
+		</div>
+		<div id="FORGET_">
+			<span>FORGET?</span>
+		</div>
+	</div>
+	<div id="Grupo_399">
+		<svg class="Trazado_8" viewBox="0 0 446.452 80">
+			<path fill="rgba(255,255,255,1)" id="Trazado_8" d="M 0 0 L 446.4515991210938 0 L 446.4515991210938 79.99999237060547 L 0 79.99999237060547 L 0 0 Z">
+			</path>
+		</svg>
+		<div id="EMAIL">
+			<span>EMAIL</span>
+		</div>
+		<svg class="Rect_ngulo_4">
+			<rect fill="rgba(85,239,196,1)" id="Rect_ngulo_4" rx="0" ry="0" x="0" y="0" width="6" height="80">
+			</rect>
+		</svg>
+	</div>
+	<div id="Grupo_400">
+		<div id="LOGIN">
+			<span>LOGIN</span>
+		</div>
+		<div id="login">
+			<div id="Grupo_5">
+				<div id="Grupo_4">
+					<svg class="Trazado_10" viewBox="170.666 0 19.344 29.016">
+						<path fill="rgba(85,239,196,1)" id="Trazado_10" d="M 187.5918121337891 0 L 173.0839996337891 0 C 171.7504577636719 0 170.666015625 1.084402322769165 170.666015625 2.417987823486328 L 170.666015625 6.649452209472656 C 170.666015625 6.983584880828857 170.9363861083984 7.253963470458984 171.2705230712891 7.253963470458984 C 171.6046600341797 7.253963470458984 171.8750305175781 6.983585834503174 171.8750305175781 6.649452686309814 L 171.8750305175781 2.417987823486328 C 171.8750305175781 1.751535058021545 172.4175415039063 1.209022164344788 173.0839996337891 1.209022164344788 L 187.5918121337891 1.209022164344788 C 188.2582702636719 1.209022164344788 188.80078125 1.751535058021545 188.80078125 2.417987823486328 L 188.80078125 26.59769248962402 C 188.80078125 27.26414680480957 188.2582702636719 27.80665969848633 187.5918121337891 27.80665969848633 L 173.0839996337891 27.80665969848633 C 172.4175415039063 27.80665969848633 171.8750305175781 27.26414680480957 171.8750305175781 26.59769248962402 L 171.8750305175781 22.36623001098633 C 171.8750305175781 22.03209686279297 171.6046600341797 21.76171875 171.2705230712891 21.76171875 C 170.9363861083984 21.76171875 170.666015625 22.03209686279297 170.666015625 22.36623001098633 L 170.666015625 26.59769248962402 C 170.666015625 27.93122100830078 171.7504272460938 29.01568031311035 173.0839996337891 29.01568031311035 L 187.5918121337891 29.01568031311035 C 188.9253845214844 29.015625 190.0097961425781 27.93122100830078 190.0097961425781 26.59763717651367 L 190.0097961425781 2.417987823486328 C 190.0097961425781 1.084402322769165 188.9253845214844 0 187.5918121337891 0 Z">
+						</path>
+					</svg>
+					<svg class="Trazado_11" viewBox="0 128.003 21.762 14.508">
+						<path fill="rgba(85,239,196,1)" id="Trazado_11" d="M 13.49481678009033 141.4601440429688 C 13.24863719940186 141.6856384277344 13.23214626312256 142.0681610107422 13.45763874053955 142.3143463134766 C 13.57687568664551 142.4442443847656 13.73980522155762 142.5103149414063 13.90335750579834 142.5103149414063 C 14.04917335510254 142.5103149414063 14.19555473327637 142.4577789306641 14.31184387207031 142.3515167236328 L 21.56575012207031 135.7021331787109 C 21.69087982177734 135.5876007080078 21.76171875 135.4258575439453 21.76171875 135.2564086914063 C 21.76171875 135.0869750976563 21.69087982177734 134.9252319335938 21.56575012207031 134.8106994628906 L 14.31184387207031 128.1613006591797 C 14.06447315216064 127.9358062744141 13.68375682830811 127.9529113769531 13.45763874053955 128.1984710693359 C 13.23214435577393 128.4446563720703 13.24863624572754 128.8271789550781 13.49481678009033 129.0526733398438 L 19.60339736938477 134.6519012451172 L 0.6045110821723938 134.6519012451172 C 0.2703780233860016 134.6519012451172 0 134.9222869873047 0 135.2564086914063 C 0 135.5905456542969 0.2703780233860016 135.8609161376953 0.6045110821723938 135.8609161376953 L 19.60345458984375 135.8609161376953 L 13.49481678009033 141.4601440429688 Z">
+						</path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
