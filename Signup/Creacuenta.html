@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creacuenta</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Creacuenta;
+		--web-view-id: Creacuenta;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Creacuenta;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Creacuenta {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Creacuenta;
+		--web-view-id: Creacuenta;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Grupo_387 {
+		position: absolute;
+		width: 1963px;
+		height: 1104px;
+		left: -16px;
+		top: -19px;
+		overflow: visible;
+	}
+	#Fondo2 {
+		position: absolute;
+		width: 1963px;
+		height: 1104px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Grupo_357 {
+		position: absolute;
+		width: 1700px;
+		height: 155px;
+		left: 138px;
+		top: 50px;
+		overflow: visible;
+	}
+	#Repetir_cuadr_cula_1 {
+		position: absolute;
+		width: 457px;
+		height: 155px;
+		left: 0px;
+		top: 0px;
+		overflow: hidden;
+	}
+	#Repetir_cuadr_cula_1_0 {
+		position: absolute;
+		width: 457px;
+		height: 155px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#OnWorkOnly {
+		position: absolute;
+		left: 220px;
+		top: 63px;
+		overflow: visible;
+		width: 238px;
+		white-space: nowrap;
+		line-height: 50px;
+		margin-top: -5px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.3px;
+	}
+	#Logo1 {
+		position: absolute;
+		width: 219px;
+		height: 155px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Grupo_348 {
+		position: absolute;
+		width: 927px;
+		height: 70px;
+		left: 773px;
+		top: 39px;
+		overflow: visible;
+	}
+	#navbar {
+		position: absolute;
+		width: 648px;
+		height: 24px;
+		left: 0px;
+		top: 23px;
+		overflow: visible;
+	}
+	#menu_center {
+		position: absolute;
+		width: 648px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Home {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 64px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Index.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#_Quienes_somos_ {
+		position: absolute;
+		left: 123px;
+		top: 0px;
+		overflow: visible;
+		width: 181px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: _Qui_nes_somos_.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Catalogo {
+		position: absolute;
+		left: 363px;
+		top: 0px;
+		overflow: visible;
+		width: 94px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Catalogo.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Contactanos {
+		position: absolute;
+		left: 517px;
+		top: 0px;
+		overflow: visible;
+		width: 132px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Contactanos.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	.Rect_ngulo_177 {
+		filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 273px;
+		height: 130px;
+		left: 714px;
+		top: 0px;
+	}
+	#Publica_tu_lugar {
+		position: absolute;
+		left: 1507px;
+		top: 62px;
+		overflow: visible;
+		width: 175px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Publicatulugar.html;
+		cursor: pointer;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(245,245,245,1);
+		letter-spacing: 0.3px;
+	}
+	#Enmascarar_grupo_1 {
+		opacity: 0.21;
+		position: absolute;
+		width: 2033px;
+		height: 1152px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Grupo_401 {
+		position: absolute;
+		width: 298px;
+		height: 58px;
+		left: 858px;
+		top: 205px;
+		overflow: visible;
+	}
+	#content {
+		position: absolute;
+		width: 298px;
+		height: 58px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Crea_Cuenta {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 299px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 48px;
+		color: rgba(255,255,255,1);
+	}
+	.Rect_ngulo_6 {
+		position: absolute;
+		overflow: visible;
+		width: 627px;
+		height: 712px;
+		left: 693px;
+		top: 304px;
+	}
+	.Rect_ngulo_7 {
+		position: absolute;
+		overflow: visible;
+		width: 390px;
+		height: 52px;
+		left: 810px;
+		top: 370px;
+	}
+	.Rect_ngulo_8 {
+		position: absolute;
+		overflow: visible;
+		width: 390px;
+		height: 52px;
+		left: 811px;
+		top: 472px;
+	}
+	.Rect_ngulo_9 {
+		position: absolute;
+		overflow: visible;
+		width: 390px;
+		height: 52px;
+		left: 811px;
+		top: 579px;
+	}
+	.Rect_ngulo_10 {
+		position: absolute;
+		overflow: visible;
+		width: 390px;
+		height: 52px;
+		left: 812px;
+		top: 697px;
+	}
+	#Full_Name {
+		position: absolute;
+		left: 826px;
+		top: 386px;
+		overflow: visible;
+		width: 70px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(165,163,163,1);
+	}
+	#Email {
+		position: absolute;
+		left: 827px;
+		top: 493px;
+		overflow: visible;
+		width: 39px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(165,163,163,1);
+	}
+	#Password {
+		position: absolute;
+		left: 824px;
+		top: 595px;
+		overflow: visible;
+		width: 68px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(165,163,163,1);
+	}
+	#Confirm_Password {
+		position: absolute;
+		left: 824px;
+		top: 713px;
+		overflow: visible;
+		width: 128px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(165,163,163,1);
+	}
+	#Grupo_7 {
+		position: absolute;
+		width: 390px;
+		height: 52px;
+		left: 812px;
+		top: 799px;
+		overflow: visible;
+	}
+	.Rect_ngulo_11 {
+		position: absolute;
+		overflow: visible;
+		width: 390px;
+		height: 52px;
+		left: 0px;
+		top: 0px;
+	}
+	#Sign_Up {
+		position: absolute;
+		left: 161px;
+		top: 14px;
+		overflow: visible;
+		width: 70px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+</style>
+</head>
+<body>
+<div id="Creacuenta">
+	<div id="Grupo_387">
+		<img id="Fondo2" src="Fondo2.png" srcset="Fondo2.png 1x, Fondo2@2x.png 2x">
+		<div id="Grupo_357">
+			<div id="Repetir_cuadr_cula_1">
+				<div id="Repetir_cuadr_cula_1_0">
+					<div id="OnWorkOnly">
+						<span>OnWorkOnly</span>
+					</div>
+					<img id="Logo1" src="Logo1.png" srcset="Logo1.png 1x, Logo1@2x.png 2x">
+				</div>
+			</div>
+			<div id="Grupo_348">
+				<div id="navbar">
+					<div id="menu_center">
+						<div onclick="application.goToTargetView(event)" id="Home">
+							<span>Home</span>
+						</div>
+						<div onclick="application.goToTargetView(event)" id="_Quienes_somos_">
+							<span>¿Quienes somos?</span>
+						</div>
+						<div onclick="application.goToTargetView(event)" id="Catalogo">
+							<span>Catalogo</span>
+						</div>
+						<div onclick="application.goToTargetView(event)" id="Contactanos">
+							<span>Contactanos</span>
+						</div>
+					</div>
+				</div>
+				<svg class="Rect_ngulo_177">
+					<rect fill="rgba(48,164,233,1)" id="Rect_ngulo_177" rx="5" ry="5" x="0" y="0" width="213" height="70">
+					</rect>
+				</svg>
+			</div>
+			<div onclick="application.goToTargetView(event)" id="Publica_tu_lugar">
+				<span>Publica tu lugar</span>
+			</div>
+		</div>
+	</div>
+	<div id="Enmascarar_grupo_1">
+	<svg style="width:inherit;height:inherit;overflow:visible;">
+		<rect fill="url(#Enmascarar_grupo_1_d_pattern)" width="100%" height="100%"></rect>
+			<pattern elementId="Enmascarar_grupo_1_d" id="Enmascarar_grupo_1_d_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="0" width="100%" height="100%" href="Enmascarar_grupo_1_d_pattern.png" xlink:href="Enmascarar_grupo_1_d_pattern.png"></image>
+			</pattern>
+			</svg>
+		</div>
+	<div id="Grupo_401">
+		<div id="content">
+			<div id="Crea_Cuenta">
+				<span>Crea Cuenta</span>
+			</div>
+		</div>
+	</div>
+	<svg class="Rect_ngulo_6">
+		<rect fill="rgba(255,255,255,1)" id="Rect_ngulo_6" rx="30" ry="30" x="0" y="0" width="627" height="712">
+		</rect>
+	</svg>
+	<svg class="Rect_ngulo_7">
+		<rect fill="transparent" stroke="rgba(37,36,39,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rect_ngulo_7" rx="10" ry="10" x="0" y="0" width="390" height="52">
+		</rect>
+	</svg>
+	<svg class="Rect_ngulo_8">
+		<rect fill="transparent" stroke="rgba(37,36,39,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rect_ngulo_8" rx="10" ry="10" x="0" y="0" width="390" height="52">
+		</rect>
+	</svg>
+	<svg class="Rect_ngulo_9">
+		<rect fill="transparent" stroke="rgba(37,36,39,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rect_ngulo_9" rx="10" ry="10" x="0" y="0" width="390" height="52">
+		</rect>
+	</svg>
+	<svg class="Rect_ngulo_10">
+		<rect fill="transparent" stroke="rgba(37,36,39,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rect_ngulo_10" rx="10" ry="10" x="0" y="0" width="390" height="52">
+		</rect>
+	</svg>
+	<div id="Full_Name">
+		<span>Full Name</span>
+	</div>
+	<div id="Email">
+		<span>Email</span>
+	</div>
+	<div id="Password">
+		<span>Password</span>
+	</div>
+	<div id="Confirm_Password">
+		<span>Confirm Password</span>
+	</div>
+	<div id="Grupo_7">
+		<svg class="Rect_ngulo_11">
+			<rect fill="rgba(49,161,227,1)" id="Rect_ngulo_11" rx="10" ry="10" x="0" y="0" width="390" height="52">
+			</rect>
+		</svg>
+		<div id="Sign_Up">
+			<span>Sign Up</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>

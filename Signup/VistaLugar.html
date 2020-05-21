@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VistaLugar</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: VistaLugar;
+		--web-view-id: VistaLugar;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: VistaLugar;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#VistaLugar {
+		position: absolute;
+		width: 1920px;
+		height: 1116px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: VistaLugar;
+		--web-view-id: VistaLugar;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	.Trazado_7092 {
+		overflow: visible;
+		position: absolute;
+		width: 1920px;
+		height: 1116px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Grupo_371 {
+		position: absolute;
+		width: 1726px;
+		height: 155px;
+		left: 62px;
+		top: 40px;
+		overflow: visible;
+	}
+	#Grupo_388 {
+		position: absolute;
+		width: 1726px;
+		height: 155px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Grupo_357 {
+		position: absolute;
+		width: 1726px;
+		height: 155px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Publica_tu_lugar {
+		position: absolute;
+		left: 1533px;
+		top: 62px;
+		overflow: visible;
+		width: 175px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(245,245,245,1);
+		letter-spacing: 0.3px;
+	}
+	#Inicia_sesi_n {
+		position: absolute;
+		left: 1300px;
+		top: 62px;
+		overflow: visible;
+		width: 133px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(245,245,245,1);
+		letter-spacing: 0.3px;
+	}
+	#Repetir_cuadr_cula_1 {
+		position: absolute;
+		width: 457px;
+		height: 155px;
+		left: 0px;
+		top: 0px;
+		overflow: hidden;
+	}
+	#Repetir_cuadr_cula_1_0 {
+		position: absolute;
+		width: 457px;
+		height: 155px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#OnWorkOnly {
+		position: absolute;
+		left: 220px;
+		top: 63px;
+		overflow: visible;
+		width: 238px;
+		white-space: nowrap;
+		line-height: 50px;
+		margin-top: -5px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.3px;
+	}
+	#Logo1 {
+		position: absolute;
+		width: 219px;
+		height: 155px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Grupo_348 {
+		position: absolute;
+		width: 1167px;
+		height: 70px;
+		left: 559px;
+		top: 39px;
+		overflow: visible;
+	}
+	#navbar {
+		position: absolute;
+		width: 648px;
+		height: 24px;
+		left: 0px;
+		top: 23px;
+		overflow: visible;
+	}
+	#menu_center {
+		position: absolute;
+		width: 648px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Home {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 64px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Index.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#_Quienes_somos_ {
+		position: absolute;
+		left: 123px;
+		top: 0px;
+		overflow: visible;
+		width: 181px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: _Qui_nes_somos_.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Catalogo {
+		position: absolute;
+		left: 363px;
+		top: 0px;
+		overflow: visible;
+		width: 94px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Catalogo.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Contactanos {
+		position: absolute;
+		left: 517px;
+		top: 0px;
+		overflow: visible;
+		width: 132px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Contactanos.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	.Rect_ngulo_177 {
+		filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 273px;
+		height: 130px;
+		left: 954px;
+		top: 0px;
+	}
+	.Rect_ngulo_178 {
+		filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 273px;
+		height: 130px;
+		left: 695px;
+		top: 0px;
+	}
+	#Grupo_350 {
+		position: absolute;
+		width: 132px;
+		height: 24px;
+		left: 1302px;
+		top: 62px;
+		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Login.html;
+		cursor: pointer;
+	}
+	#Inicia_sesi_n_ {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 133px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(245,245,245,1);
+		letter-spacing: 0.3px;
+	}
+	#Grupo_351 {
+		position: absolute;
+		width: 174px;
+		height: 24px;
+		left: 1538px;
+		top: 62px;
+		overflow: visible;
+	}
+	#Publica_tu_lugar_ {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 175px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Publicatulugar.html;
+		cursor: pointer;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(245,245,245,1);
+		letter-spacing: 0.3px;
+	}
+	#Enmascarar_grupo_1 {
+		opacity: 0.21;
+		position: absolute;
+		width: 2033px;
+		height: 1152px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Grupo_394 {
+		position: absolute;
+		width: 604px;
+		height: 644px;
+		left: 82px;
+		top: 254px;
+		overflow: visible;
+	}
+	.Rect_ngulo_177_dt {
+		filter: drop-shadow(0px 20px 20px rgba(80, 48, 32, 0.157));
+		position: absolute;
+		overflow: visible;
+		width: 664px;
+		height: 704px;
+		left: 0px;
+		top: 0px;
+	}
+	#pexels_photo_2079246 {
+		position: absolute;
+		width: 604px;
+		height: 465px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Fulton_Street__Apt_P101__New_Y {
+		position: absolute;
+		left: 40px;
+		top: 489px;
+		overflow: visible;
+		width: 497px;
+		white-space: nowrap;
+		line-height: 73px;
+		margin-top: -22px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 29px;
+		color: rgba(75,75,75,1);
+		letter-spacing: 0.3px;
+	}
+	#bed {
+		position: absolute;
+		width: 26.983px;
+		height: 18.239px;
+		left: 40.846px;
+		top: 570.478px;
+		overflow: visible;
+	}
+	#Grupo_264 {
+		position: absolute;
+		width: 26.983px;
+		height: 18.239px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Trazado_1304 {
+		overflow: visible;
+		position: absolute;
+		width: 26.983px;
+		height: 18.239px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#ID2bd {
+		position: absolute;
+		left: 76px;
+		top: 566px;
+		overflow: visible;
+		width: 54px;
+		height: 28px;
+		line-height: 35px;
+		margin-top: -9.5px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 16px;
+		color: rgba(75,75,75,1);
+	}
+	#ID2ba {
+		position: absolute;
+		left: 202px;
+		top: 566px;
+		overflow: visible;
+		width: 54px;
+		height: 28px;
+		line-height: 35px;
+		margin-top: -9.5px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 16px;
+		color: rgba(75,75,75,1);
+	}
+	#bath {
+		position: absolute;
+		width: 25.918px;
+		height: 24.191px;
+		left: 171.353px;
+		top: 567.755px;
+		overflow: visible;
+	}
+	#Grupo_266 {
+		position: absolute;
+		width: 25.918px;
+		height: 24.191px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Grupo_265 {
+		position: absolute;
+		width: 25.918px;
+		height: 24.191px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Trazado_1305 {
+		overflow: visible;
+		position: absolute;
+		width: 25.918px;
+		height: 24.191px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Trazado_1306 {
+		overflow: visible;
+		position: absolute;
+		width: 0.864px;
+		height: 1.08px;
+		left: 15.119px;
+		top: 6.911px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Trazado_1307 {
+		overflow: visible;
+		position: absolute;
+		width: 0.864px;
+		height: 1.339px;
+		left: 15.119px;
+		top: 8.639px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Trazado_1308 {
+		overflow: visible;
+		position: absolute;
+		width: 0.864px;
+		height: 1.08px;
+		left: 15.119px;
+		top: 10.583px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Trazado_1309 {
+		overflow: visible;
+		position: absolute;
+		width: 0.864px;
+		height: 1.08px;
+		left: 16.847px;
+		top: 6.911px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Trazado_1310 {
+		overflow: visible;
+		position: absolute;
+		width: 0.864px;
+		height: 1.339px;
+		left: 16.847px;
+		top: 8.639px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Trazado_1311 {
+		overflow: visible;
+		position: absolute;
+		width: 0.864px;
+		height: 1.08px;
+		left: 16.847px;
+		top: 10.583px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Trazado_1312 {
+		overflow: visible;
+		position: absolute;
+		width: 0.864px;
+		height: 1.08px;
+		left: 18.575px;
+		top: 6.911px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Trazado_1313 {
+		overflow: visible;
+		position: absolute;
+		width: 0.864px;
+		height: 1.339px;
+		left: 18.575px;
+		top: 8.639px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Trazado_1314 {
+		overflow: visible;
+		position: absolute;
+		width: 0.864px;
+		height: 1.08px;
+		left: 18.575px;
+		top: 10.583px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.L_nea_57 {
+		overflow: visible;
+		position: absolute;
+		width: 1px;
+		height: 42.207px;
+		left: 155.749px;
+		top: 558.905px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.L_nea_58 {
+		overflow: visible;
+		position: absolute;
+		width: 1px;
+		height: 42.207px;
+		left: 270.58px;
+		top: 558.905px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Grupo_354 {
+		position: absolute;
+		width: 161px;
+		height: 64px;
+		left: 403px;
+		top: 547px;
+		overflow: visible;
+	}
+	.Rect_ngulo_181 {
+		position: absolute;
+		overflow: visible;
+		width: 161px;
+		height: 64px;
+		left: 0px;
+		top: 0px;
+	}
+	#_6_500 {
+		position: absolute;
+		left: 35px;
+		top: 15px;
+		overflow: visible;
+		width: 89px;
+		white-space: nowrap;
+		line-height: 66px;
+		margin-top: -20px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 26px;
+		color: rgba(48,164,233,1);
+		letter-spacing: 0.3px;
+	}
+	#_2_500 {
+		position: absolute;
+		left: 521px;
+		top: 815px;
+		overflow: visible;
+		width: 93px;
+		white-space: nowrap;
+		line-height: 68px;
+		margin-top: -20.5px;
+		text-align: left;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 27px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.3px;
+	}
+	.email_field {
+		overflow: visible;
+		position: absolute;
+		width: 175.38px;
+		height: 151.35px;
+		left: 82.24px;
+		top: 928.15px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.email_field_el {
+		overflow: visible;
+		position: absolute;
+		width: 175.38px;
+		height: 151.35px;
+		left: 304.538px;
+		top: 927.15px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.email_field_em {
+		overflow: visible;
+		position: absolute;
+		width: 175.38px;
+		height: 151.35px;
+		left: 525.24px;
+		top: 928.15px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.email_field_en {
+		overflow: visible;
+		position: absolute;
+		width: 175.38px;
+		height: 151.35px;
+		left: 747.538px;
+		top: 927.15px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Grupo_402 {
+		position: absolute;
+		width: 339px;
+		height: 81px;
+		left: 1001px;
+		top: 952px;
+		overflow: visible;
+	}
+	.Rect_ngulo_181_ep {
+		position: absolute;
+		overflow: visible;
+		width: 339px;
+		height: 81px;
+		left: 0px;
+		top: 0px;
+	}
+	#Agendar_cita {
+		position: absolute;
+		left: 1013px;
+		top: 964px;
+		overflow: visible;
+		width: 311px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 48px;
+		color: rgba(255,255,255,1);
+	}
+	#Grupo_403 {
+		position: absolute;
+		width: 339px;
+		height: 81px;
+		left: 1391px;
+		top: 952px;
+		overflow: visible;
+	}
+	.Rect_ngulo_181_es {
+		position: absolute;
+		overflow: visible;
+		width: 339px;
+		height: 81px;
+		left: 0px;
+		top: 0px;
+	}
+	#Plan_de_pago {
+		position: absolute;
+		left: 1399px;
+		top: 964px;
+		overflow: visible;
+		width: 319px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 48px;
+		color: rgba(255,255,255,1);
+	}
+	#ID1573658897_566202_1573659544 {
+		position: absolute;
+		width: 491px;
+		height: 491px;
+		left: 748px;
+		top: 313px;
+		overflow: visible;
+	}
+	#Grupo_347 {
+		position: absolute;
+		width: 286px;
+		height: 58px;
+		left: 748px;
+		top: 254px;
+		overflow: visible;
+	}
+	#content {
+		position: absolute;
+		width: 286px;
+		height: 58px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Descripcion {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 287px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 48px;
+		color: rgba(255,255,255,1);
+	}
+	#Grupo_404 {
+		position: absolute;
+		width: 514px;
+		height: 345px;
+		left: 1301px;
+		top: 349px;
+		overflow: visible;
+	}
+	#Lorem_ipsum_dolor_sit_amet__co {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 515px;
+		height: 345px;
+		line-height: 36px;
+		margin-top: -6px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		color: rgba(255,255,255,1);
+	}
+	#ID1817633 {
+		position: absolute;
+		width: 140px;
+		height: 140px;
+		left: 108px;
+		top: 940px;
+		overflow: visible;
+	}
+	#ID1817633_e {
+		position: absolute;
+		width: 140px;
+		height: 140px;
+		left: 328px;
+		top: 940px;
+		overflow: visible;
+	}
+	#ID1817633_fa {
+		position: absolute;
+		width: 140px;
+		height: 140px;
+		left: 548px;
+		top: 940px;
+		overflow: visible;
+	}
+	#ID1817633_fb {
+		position: absolute;
+		width: 140px;
+		height: 140px;
+		left: 768px;
+		top: 940px;
+		overflow: visible;
+	}
+</style>
+</head>
+<body>
+<div id="VistaLugar">
+	<svg class="Trazado_7092" viewBox="0 0 1920 1116">
+		<path fill="rgba(48,164,233,1)" id="Trazado_7092" d="M 0 0 L 1920 0 L 1920 1116 L 0 1116 L 0 0 Z">
+		</path>
+	</svg>
+	<div id="Grupo_371">
+		<div id="Grupo_388">
+			<div id="Grupo_357">
+				<div id="Publica_tu_lugar">
+					<span>Publica tu lugar</span>
+				</div>
+				<div id="Inicia_sesi_n">
+					<span>Inicia sesión</span>
+				</div>
+				<div id="Repetir_cuadr_cula_1">
+					<div id="Repetir_cuadr_cula_1_0">
+						<div id="OnWorkOnly">
+							<span>OnWorkOnly</span>
+						</div>
+						<img id="Logo1" src="Logo1.png" srcset="Logo1.png 1x, Logo1@2x.png 2x">
+					</div>
+				</div>
+				<div id="Grupo_348">
+					<div id="navbar">
+						<div id="menu_center">
+							<div onclick="application.goToTargetView(event)" id="Home">
+								<span>Home</span>
+							</div>
+							<div onclick="application.goToTargetView(event)" id="_Quienes_somos_">
+								<span>¿Quienes somos?</span>
+							</div>
+							<div onclick="application.goToTargetView(event)" id="Catalogo">
+								<span>Catalogo</span>
+							</div>
+							<div onclick="application.goToTargetView(event)" id="Contactanos">
+								<span>Contactanos</span>
+							</div>
+						</div>
+					</div>
+					<svg class="Rect_ngulo_177">
+						<rect fill="rgba(48,164,233,1)" id="Rect_ngulo_177" rx="5" ry="5" x="0" y="0" width="213" height="70">
+						</rect>
+					</svg>
+					<svg class="Rect_ngulo_178">
+						<rect fill="rgba(48,164,233,1)" id="Rect_ngulo_178" rx="5" ry="5" x="0" y="0" width="213" height="70">
+						</rect>
+					</svg>
+				</div>
+				<div onclick="application.goToTargetView(event)" id="Grupo_350">
+					<div id="Inicia_sesi_n_">
+						<span>Inicia sesión</span>
+					</div>
+				</div>
+				<div id="Grupo_351">
+					<div onclick="application.goToTargetView(event)" id="Publica_tu_lugar_">
+						<span>Publica tu lugar</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="Enmascarar_grupo_1">
+	<svg style="width:inherit;height:inherit;overflow:visible;">
+		<rect fill="url(#Enmascarar_grupo_1_e_pattern)" width="100%" height="100%"></rect>
+			<pattern elementId="Enmascarar_grupo_1_e" id="Enmascarar_grupo_1_e_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="0" width="100%" height="100%" href="Enmascarar_grupo_1_e_pattern.png" xlink:href="Enmascarar_grupo_1_e_pattern.png"></image>
+			</pattern>
+			</svg>
+		</div>
+	<div id="Grupo_394">
+		<svg class="Rect_ngulo_177_dt">
+			<rect fill="rgba(255,255,255,1)" id="Rect_ngulo_177_dt" rx="5" ry="5" x="0" y="0" width="604" height="644">
+			</rect>
+		</svg>
+		<img id="pexels_photo_2079246" src="pexels_photo_2079246.png" srcset="pexels_photo_2079246.png 1x, pexels_photo_2079246@2x.png 2x">
+		<div id="Fulton_Street__Apt_P101__New_Y">
+			<span>Fulton Street, Apt P101, New York</span>
+		</div>
+		<div id="bed">
+			<div id="Grupo_264">
+				<svg class="Trazado_1304" viewBox="0 60.6 26.983 18.239">
+					<path fill="rgba(48,164,233,1)" id="Trazado_1304" d="M 24.35724258422852 67.6705322265625 L 24.35724258422852 67.64167785644531 L 24.35724258422852 63.28391265869141 C 24.35724258422852 61.32148742675781 22.97199630737305 60.59999847412109 21.67332649230957 60.59999847412109 L 5.223525047302246 60.59999847412109 C 3.924857139587402 60.59999847412109 2.539610624313354 61.29262542724609 2.539610624313354 63.28391265869141 L 2.539610624313354 67.64167785644531 L 2.539610624313354 67.6705322265625 C 1.240942358970642 67.81483459472656 -7.629393621755298e-06 68.68061828613281 -7.629393621755298e-06 70.67189788818359 L -7.629393621755298e-06 74.07730102539063 C -7.629393621755298e-06 74.65449523925781 0.461741179227829 75.11623382568359 1.03892719745636 75.11623382568359 L 1.385238766670227 75.11623382568359 L 1.385238766670227 77.80015563964844 C 1.385238766670227 78.37733459472656 1.84698760509491 78.83908081054688 2.42417311668396 78.83908081054688 L 3.405389308929443 78.83908081054688 C 3.982575178146362 78.83908081054688 4.444324016571045 78.37733459472656 4.444324016571045 77.80015563964844 L 4.444324016571045 75.08736419677734 L 22.53910827636719 75.08736419677734 L 22.53910827636719 77.80015563964844 C 22.53910827636719 78.37733459472656 23.0008544921875 78.83908081054688 23.57803916931152 78.83908081054688 L 24.55925559997559 78.83908081054688 C 25.13644218444824 78.83908081054688 25.59819221496582 78.37733459472656 25.59819221496582 77.80015563964844 L 25.59819221496582 75.08736419677734 L 25.94450187683105 75.08736419677734 C 26.52168846130371 75.08736419677734 26.98343658447266 74.62563323974609 26.98343658447266 74.04843139648438 L 26.98343658447266 70.67189788818359 C 26.89685821533203 68.68061828613281 25.65591049194336 67.81483459472656 24.35724258422852 67.6705322265625 Z M 3.520827054977417 63.28391265869141 L 3.578545808792114 63.28391265869141 C 3.578545808792114 61.92753601074219 4.473183631896973 61.63893127441406 5.223526000976563 61.63893127441406 L 21.67332649230957 61.63893127441406 C 22.42366790771484 61.63893127441406 23.31830978393555 61.92753601074219 23.31830978393555 63.28391265869141 L 23.31830978393555 67.64167785644531 L 22.53910827636719 67.64167785644531 L 22.53910827636719 65.15976715087891 C 22.53910827636719 64.58259582519531 22.07735824584961 64.12084197998047 21.50017166137695 64.12084197998047 L 15.15112495422363 64.12084197998047 C 14.57393836975098 64.12084197998047 14.11219215393066 64.58259582519531 14.11219215393066 65.15976715087891 L 14.11219215393066 67.64167785644531 L 12.9000997543335 67.64167785644531 L 12.9000997543335 65.15976715087891 C 12.9000997543335 64.58259582519531 12.43835258483887 64.12084197998047 11.86116600036621 64.12084197998047 L 5.512120246887207 64.12084197998047 C 4.934934139251709 64.12084197998047 4.473184585571289 64.58259582519531 4.473184585571289 65.15976715087891 L 4.473184585571289 67.64167785644531 L 3.520827054977417 67.64167785644531 L 3.520827054977417 63.28391265869141 Z M 21.50017166137695 65.15976715087891 L 21.50017166137695 67.64167785644531 L 15.15112495422363 67.64167785644531 L 15.15112495422363 65.15976715087891 L 21.50017166137695 65.15976715087891 Z M 11.91888427734375 65.15976715087891 L 11.91888427734375 67.64167785644531 L 5.56983757019043 67.64167785644531 L 5.56983757019043 65.15976715087891 L 11.91888427734375 65.15976715087891 Z M 3.376530885696411 77.80015563964844 L 2.395314693450928 77.80015563964844 L 2.395314693450928 75.08736419677734 L 3.376530885696411 75.08736419677734 L 3.376530885696411 77.80015563964844 Z M 24.50153923034668 77.80015563964844 L 23.52032279968262 77.80015563964844 L 23.52032279968262 75.08736419677734 L 24.50153923034668 75.08736419677734 L 24.50153923034668 77.80015563964844 Z M 25.8579273223877 74.07730102539063 L 24.50153923034668 74.07730102539063 L 23.52032279968262 74.07730102539063 L 3.376530885696411 74.07730102539063 L 2.395314693450928 74.07730102539063 L 1.010068535804749 74.07730102539063 L 1.010068535804749 72.54776000976563 L 25.8579273223877 72.54776000976563 L 25.8579273223877 74.07730102539063 Z M 25.8579273223877 71.50882720947266 L 1.010068535804749 71.50882720947266 L 1.010068535804749 70.67189788818359 C 1.010068535804749 68.94033813476563 2.279877424240112 68.68061828613281 3.001359701156616 68.68061828613281 L 3.549686431884766 68.68061828613281 L 5.54097843170166 68.68061828613281 L 11.89002418518066 68.68061828613281 L 15.15112495422363 68.68061828613281 L 21.50017166137695 68.68061828613281 L 23.31831169128418 68.68061828613281 L 23.86663436889648 68.68061828613281 C 24.61697578430176 68.68061828613281 25.8579273223877 68.94033813476563 25.8579273223877 70.67189788818359 L 25.8579273223877 71.50882720947266 Z">
+					</path>
+				</svg>
+			</div>
+		</div>
+		<div id="ID2bd">
+			<span>2bd</span>
+		</div>
+		<div id="ID2ba">
+			<span>2ba</span>
+		</div>
+		<div id="bath">
+			<div id="Grupo_266">
+				<div id="Grupo_265">
+					<svg class="Trazado_1305" viewBox="-1 16.067 25.918 24.191">
+						<path fill="rgba(48,164,233,1)" id="Trazado_1305" d="M 23.62250518798828 29.02619934082031 L 23.19054794311523 29.02619934082031 L 23.19054794311523 19.95475006103516 C 23.19054794311523 17.79486465454102 21.46267127990723 16.06698608398438 19.30278396606445 16.06698608398438 C 17.39079475402832 16.06698608398438 16.01564979553223 17.48470306396484 15.86180877685547 19.56197357177734 C 14.85802555084229 19.75170516967773 14.11909961700439 20.61622619628906 14.11909961700439 21.68262481689453 C 14.11909961700439 21.94181060791016 14.2918701171875 22.11458587646484 14.55105495452881 22.11458587646484 L 18.00686264038086 22.11458587646484 C 18.26604843139648 22.11458587646484 18.43882179260254 21.94181060791016 18.43882179260254 21.68262481689453 C 18.43882179260254 20.62802124023438 17.71624183654785 19.77068710327148 16.72946929931641 19.56830215454102 C 16.85855293273926 18.19563674926758 17.6829833984375 16.93090057373047 19.30278396606445 16.93090057373047 C 20.98748207092285 16.93090057373047 22.32658576965332 18.27000045776367 22.32658576965332 19.9547004699707 L 22.32658576965332 29.02614974975586 L 9.325606346130371 29.02614974975586 C 9.130206108093262 28.02985763549805 8.268721580505371 27.29827117919922 7.207535266876221 27.29827117919922 C 6.775578022003174 26.77989959716797 6.170797348022461 26.43430709838867 5.47965669631958 26.43430709838867 C 4.658924102783203 26.43430709838867 3.924551486968994 26.90949249267578 3.578956127166748 27.60063552856445 C 3.233359813690186 27.42786407470703 2.844583988189697 27.29827117919922 2.455807685852051 27.29827117919922 C 1.394620299339294 27.29827117919922 0.5331363081932068 28.02985382080078 0.337735652923584 29.02614974975586 L 0.2959212362766266 29.02614974975586 C -0.4384510517120361 29.02614974975586 -1 29.58769607543945 -1 30.32206726074219 C -1 31.05644226074219 -0.4384510517120361 31.61799240112305 0.2959212362766266 31.61799240112305 L 0.8150489330291748 31.61799240112305 L 1.980618715286255 36.24012756347656 C 2.326214790344238 37.57922744750977 3.535724639892578 38.52960586547852 4.918056964874268 38.52960586547852 L 5.263652801513672 38.52960586547852 L 4.702104091644287 39.65275573730469 C 4.572511672973633 39.86875915527344 4.658923149108887 40.12794494628906 4.874876499176025 40.21430969238281 C 4.918056964874268 40.25748825073242 5.004468441009521 40.25748825073242 5.047649383544922 40.25748825073242 C 5.22042179107666 40.25748825073242 5.350013732910156 40.17107772827148 5.436425685882568 40.04148483276367 L 6.192363262176514 38.52960586547852 L 18.17963600158691 38.52960586547852 L 18.91400718688965 39.99830627441406 C 19.00042152404785 40.17107772827148 19.1300106048584 40.25748825073242 19.30278396606445 40.25748825073242 C 19.38919639587402 40.25748825073242 19.43237495422363 40.25748825073242 19.47555541992188 40.17107772827148 C 19.64832878112793 40.08466339111328 19.73473930358887 39.82547378540039 19.64832878112793 39.60953140258789 L 19.10723114013672 38.52728271484375 C 20.44461059570313 38.47978973388672 21.60116958618164 37.54571914672852 21.93780517578125 36.28330612182617 L 23.11425971984863 31.61799240112305 L 23.62250518798828 31.61799240112305 C 24.35687828063965 31.61799240112305 24.91842651367188 31.05644226074219 24.91842651367188 30.32206726074219 C 24.91842651367188 29.58774948120117 24.35687828063965 29.02619934082031 23.62250518798828 29.02619934082031 Z M 17.53167533874512 21.25067138671875 L 15.06942367553711 21.25067138671875 C 15.24219512939453 20.73230361938477 15.76056480407715 20.3867073059082 16.32216453552246 20.3867073059082 C 16.88376426696777 20.3867073059082 17.35890197753906 20.73230361938477 17.53167533874512 21.25067138671875 Z M 2.455806732177734 28.16223526000977 C 2.844583034515381 28.16223526000977 3.190178871154785 28.33501052856445 3.49254322052002 28.63742065429688 C 3.578955173492432 28.76701354980469 3.75172758102417 28.81019592285156 3.924500465393066 28.76701354980469 C 4.097272872924805 28.72383499145508 4.183684825897217 28.59424209594727 4.226864814758301 28.42142105102539 C 4.356456756591797 27.77345657348633 4.874825477600098 27.29827117919922 5.522786140441895 27.29827117919922 C 5.997974395751953 27.29827117919922 6.429931640625 27.51427459716797 6.645934104919434 27.94623184204102 C 6.732346534729004 28.11900329589844 6.948299407958984 28.20541763305664 7.121122360229492 28.16223526000977 C 7.164302825927734 28.16223526000977 7.207534313201904 28.16223526000977 7.250714778900146 28.16223526000977 C 7.812263488769531 28.16223526000977 8.287450790405273 28.50783157348633 8.460223197937012 29.02619934082031 L 1.246246576309204 29.02619934082031 C 1.419069886207581 28.50783157348633 1.894207358360291 28.16223526000977 2.455806732177734 28.16223526000977 Z M 21.16025543212891 36.02417373657227 C 20.90107345581055 36.97450256347656 20.03710556030273 37.66569137573242 19.04360198974609 37.66569137573242 L 4.961237907409668 37.66569137573242 C 3.967680931091309 37.66569137573242 3.103767395019531 36.97454833984375 2.844583988189697 36.02417373657227 L 1.721434950828552 31.6180419921875 L 22.19699096679688 31.6180419921875 L 21.16025543212891 36.02417373657227 Z M 23.62250518798828 30.75407791137695 L 22.75854301452637 30.75407791137695 L 1.15988564491272 30.75407791137695 L 0.2959212362766266 30.75407791137695 C 0.03673690557479858 30.75407791137695 -0.136035680770874 30.58130264282227 -0.136035680770874 30.32212448120117 C -0.136035680770874 30.06293869018555 0.03673702478408813 29.89016342163086 0.2959213554859161 29.89016342163086 L 0.727878212928772 29.89016342163086 L 8.935360908508301 29.89016342163086 L 23.62250518798828 29.89016342163086 C 23.88169097900391 29.89016342163086 24.05446243286133 30.06293869018555 24.05446243286133 30.32212448120117 C 24.05446243286133 30.58130264282227 23.88169097900391 30.75407791137695 23.62250518798828 30.75407791137695 Z">
+						</path>
+					</svg>
+					<svg class="Trazado_1306" viewBox="297.667 152.6 0.864 1.08">
+						<path fill="rgba(48,164,233,1)" id="Trazado_1306" d="M 298.0990295410156 153.6799163818359 C 298.358154296875 153.6799163818359 298.5309448242188 153.5071411132813 298.5309448242188 153.2479705810547 L 298.5309448242188 153.0319519042969 C 298.5309448242188 152.7727661132813 298.358154296875 152.6000061035156 298.0990295410156 152.6000061035156 C 297.8397827148438 152.6000061035156 297.6670532226563 152.7727661132813 297.6670532226563 153.0319519042969 L 297.6670532226563 153.2479705810547 C 297.6670532226563 153.5071411132813 297.8397827148438 153.6799163818359 298.0990295410156 153.6799163818359 Z">
+						</path>
+					</svg>
+					<svg class="Trazado_1307" viewBox="297.667 186.734 0.864 1.339">
+						<path fill="rgba(48,164,233,1)" id="Trazado_1307" d="M 298.0990295410156 188.0731048583984 C 298.358154296875 188.0731048583984 298.5309448242188 187.8570709228516 298.5309448242188 187.6411590576172 L 298.5309448242188 187.1659698486328 C 298.5309448242188 186.9067840576172 298.358154296875 186.7339935302734 298.0990295410156 186.7339935302734 C 297.8397827148438 186.7339935302734 297.6670532226563 186.9067840576172 297.6670532226563 187.1659698486328 L 297.6670532226563 187.6411590576172 C 297.6670532226563 187.9002838134766 297.8397827148438 188.0731048583984 298.0990295410156 188.0731048583984 Z">
+						</path>
+					</svg>
+					<svg class="Trazado_1308" viewBox="297.667 225.134 0.864 1.08">
+						<path fill="rgba(48,164,233,1)" id="Trazado_1308" d="M 298.0990295410156 226.2139282226563 C 298.358154296875 226.2139282226563 298.5309448242188 226.0411376953125 298.5309448242188 225.7819519042969 L 298.5309448242188 225.5659484863281 C 298.5309448242188 225.3067626953125 298.358154296875 225.1340026855469 298.0990295410156 225.1340026855469 C 297.8397827148438 225.1340026855469 297.6670532226563 225.3067626953125 297.6670532226563 225.5659484863281 L 297.6670532226563 225.7819519042969 C 297.6670532226563 226.0410766601563 297.8397827148438 226.2139282226563 298.0990295410156 226.2139282226563 Z">
+						</path>
+					</svg>
+					<svg class="Trazado_1309" viewBox="331.8 152.6 0.864 1.08">
+						<path fill="rgba(48,164,233,1)" id="Trazado_1309" d="M 332.2320251464844 153.6799163818359 C 332.4911499023438 153.6799163818359 332.6639709472656 153.5071411132813 332.6639709472656 153.2479705810547 L 332.6639709472656 153.0319519042969 C 332.6639709472656 152.7727661132813 332.4911499023438 152.6000061035156 332.2320251464844 152.6000061035156 C 331.9727783203125 152.6000061035156 331.800048828125 152.7727661132813 331.800048828125 153.0319519042969 L 331.800048828125 153.2479705810547 C 331.800048828125 153.5071411132813 331.9727783203125 153.6799163818359 332.2320251464844 153.6799163818359 Z">
+						</path>
+					</svg>
+					<svg class="Trazado_1310" viewBox="331.8 186.733 0.864 1.339">
+						<path fill="rgba(48,164,233,1)" id="Trazado_1310" d="M 331.8000183105469 187.6401672363281 C 331.8000183105469 187.8993530273438 331.9728088378906 188.0721130371094 332.2319641113281 188.0721130371094 C 332.4911804199219 188.0721130371094 332.6639709472656 187.8561096191406 332.6639709472656 187.6401672363281 L 332.6639709472656 187.1649780273438 C 332.6639709472656 186.90576171875 332.4911804199219 186.7330017089844 332.2319641113281 186.7330017089844 C 331.9728088378906 186.7330017089844 331.8000183105469 186.90576171875 331.8000183105469 187.1649780273438 L 331.8000183105469 187.6401672363281 Z">
+						</path>
+					</svg>
+					<svg class="Trazado_1311" viewBox="331.8 225.133 0.864 1.08">
+						<path fill="rgba(48,164,233,1)" id="Trazado_1311" d="M 331.8000183105469 225.7809448242188 C 331.8000183105469 226.0401306152344 331.9728088378906 226.2129211425781 332.2319641113281 226.2129211425781 C 332.4911804199219 226.2129211425781 332.6639709472656 226.0401306152344 332.6639709472656 225.7809448242188 L 332.6639709472656 225.5649719238281 C 332.6639709472656 225.3057861328125 332.4911804199219 225.1329956054688 332.2319641113281 225.1329956054688 C 331.9728088378906 225.1329956054688 331.8000183105469 225.3057861328125 331.8000183105469 225.5649719238281 L 331.8000183105469 225.7809448242188 Z">
+						</path>
+					</svg>
+					<svg class="Trazado_1312" viewBox="365.934 152.6 0.864 1.08">
+						<path fill="rgba(48,164,233,1)" id="Trazado_1312" d="M 366.365966796875 153.6799163818359 C 366.6251220703125 153.6799163818359 366.7978820800781 153.5071411132813 366.7978820800781 153.2479705810547 L 366.7978820800781 153.0319519042969 C 366.7978820800781 152.7727661132813 366.6251220703125 152.6000061035156 366.365966796875 152.6000061035156 C 366.1067810058594 152.6000061035156 365.9340209960938 152.7727661132813 365.9340209960938 153.0319519042969 L 365.9340209960938 153.2479705810547 C 365.9339294433594 153.5071411132813 366.1067810058594 153.6799163818359 366.365966796875 153.6799163818359 Z">
+						</path>
+					</svg>
+					<svg class="Trazado_1313" viewBox="365.933 186.733 0.864 1.339">
+						<path fill="rgba(48,164,233,1)" id="Trazado_1313" d="M 365.9330139160156 187.6401672363281 C 365.9330139160156 187.8993530273438 366.1058044433594 188.0721130371094 366.3650207519531 188.0721130371094 C 366.6241760253906 188.0721130371094 366.7969970703125 187.8561401367188 366.7969970703125 187.6401672363281 L 366.7969970703125 187.1649780273438 C 366.7969970703125 186.90576171875 366.6242065429688 186.7330017089844 366.3650512695313 186.7330017089844 C 366.1058654785156 186.7330017089844 365.9330444335938 186.90576171875 365.9330444335938 187.1649780273438 L 365.9330444335938 187.6401672363281 Z">
+						</path>
+					</svg>
+					<svg class="Trazado_1314" viewBox="365.933 225.133 0.864 1.08">
+						<path fill="rgba(48,164,233,1)" id="Trazado_1314" d="M 365.9330139160156 225.7809448242188 C 365.9330139160156 226.0401306152344 366.1058044433594 226.2129211425781 366.3650207519531 226.2129211425781 C 366.6241760253906 226.2129211425781 366.7969665527344 226.0401306152344 366.7969665527344 225.7809448242188 L 366.7969665527344 225.5649719238281 C 366.7969665527344 225.3057861328125 366.6241760253906 225.1329956054688 366.3650207519531 225.1329956054688 C 366.1058044433594 225.1329956054688 365.9330139160156 225.3057861328125 365.9330139160156 225.5649719238281 L 365.9330139160156 225.7809448242188 Z">
+						</path>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<svg class="L_nea_57" viewBox="0 0 1 42.207">
+			<path fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="L_nea_57" d="M 0 0 L 0 42.20718765258789">
+			</path>
+		</svg>
+		<svg class="L_nea_58" viewBox="0 0 1 42.207">
+			<path fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="L_nea_58" d="M 0 0 L 0 42.20718765258789">
+			</path>
+		</svg>
+		<div id="Grupo_354">
+			<svg class="Rect_ngulo_181">
+				<rect fill="rgba(48,164,233,1)" id="Rect_ngulo_181" rx="0" ry="0" x="0" y="0" width="161" height="64">
+				</rect>
+			</svg>
+			<div id="_6_500">
+				<span>$6,500</span>
+			</div>
+		</div>
+	</div>
+	<div id="_2_500">
+		<span>$2,500</span>
+	</div>
+	<svg class="email_field" viewBox="0 0 175.38 151.35">
+		<path fill="rgba(247,249,252,1)" stroke="rgba(0,0,0,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="email_field" d="M 0.4013473689556122 0 L 174.9783935546875 0 C 175.2000579833984 0 175.3797454833984 0.9402168393135071 175.3797454833984 2.100033521652222 L 175.3797454833984 149.2496490478516 C 175.3797454833984 150.4094696044922 175.2000579833984 151.3496856689453 174.9783935546875 151.3496856689453 L 0.4013473689556122 151.3496856689453 C 0.1796893179416656 151.3496856689453 0 150.4094696044922 0 149.2496490478516 L 0 2.100033521652222 C 0 0.9402168393135071 0.1796893179416656 0 0.4013473689556122 0 Z">
+		</path>
+	</svg>
+	<svg class="email_field_el" viewBox="0 0 175.38 151.35">
+		<path fill="rgba(247,249,252,1)" stroke="rgba(0,0,0,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="email_field_el" d="M 0.4013473689556122 0 L 174.9783935546875 0 C 175.2000579833984 0 175.3797454833984 0.9402168393135071 175.3797454833984 2.100033521652222 L 175.3797454833984 149.2496490478516 C 175.3797454833984 150.4094696044922 175.2000579833984 151.3496856689453 174.9783935546875 151.3496856689453 L 0.4013473689556122 151.3496856689453 C 0.1796893179416656 151.3496856689453 0 150.4094696044922 0 149.2496490478516 L 0 2.100033521652222 C 0 0.9402168393135071 0.1796893179416656 0 0.4013473689556122 0 Z">
+		</path>
+	</svg>
+	<svg class="email_field_em" viewBox="0 0 175.38 151.35">
+		<path fill="rgba(247,249,252,1)" stroke="rgba(0,0,0,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="email_field_em" d="M 0.4013473689556122 0 L 174.9783935546875 0 C 175.2000579833984 0 175.3797454833984 0.9402168393135071 175.3797454833984 2.100033521652222 L 175.3797454833984 149.2496490478516 C 175.3797454833984 150.4094696044922 175.2000579833984 151.3496856689453 174.9783935546875 151.3496856689453 L 0.4013473689556122 151.3496856689453 C 0.1796893179416656 151.3496856689453 0 150.4094696044922 0 149.2496490478516 L 0 2.100033521652222 C 0 0.9402168393135071 0.1796893179416656 0 0.4013473689556122 0 Z">
+		</path>
+	</svg>
+	<svg class="email_field_en" viewBox="0 0 175.38 151.35">
+		<path fill="rgba(247,249,252,1)" stroke="rgba(0,0,0,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="email_field_en" d="M 0.4013473689556122 0 L 174.9783935546875 0 C 175.2000579833984 0 175.3797454833984 0.9402168393135071 175.3797454833984 2.100033521652222 L 175.3797454833984 149.2496490478516 C 175.3797454833984 150.4094696044922 175.2000579833984 151.3496856689453 174.9783935546875 151.3496856689453 L 0.4013473689556122 151.3496856689453 C 0.1796893179416656 151.3496856689453 0 150.4094696044922 0 149.2496490478516 L 0 2.100033521652222 C 0 0.9402168393135071 0.1796893179416656 0 0.4013473689556122 0 Z">
+		</path>
+	</svg>
+	<div id="Grupo_402">
+		<svg class="Rect_ngulo_181_ep">
+			<rect fill="rgba(85,239,196,1)" id="Rect_ngulo_181_ep" rx="0" ry="0" x="0" y="0" width="339" height="81">
+			</rect>
+		</svg>
+	</div>
+	<div id="Agendar_cita">
+		<span>Agendar cita</span>
+	</div>
+	<div id="Grupo_403">
+		<svg class="Rect_ngulo_181_es">
+			<rect fill="rgba(85,239,196,1)" id="Rect_ngulo_181_es" rx="0" ry="0" x="0" y="0" width="339" height="81">
+			</rect>
+		</svg>
+	</div>
+	<div id="Plan_de_pago">
+		<span>Plan de pago</span>
+	</div>
+	<img id="ID1573658897_566202_1573659544" src="ID1573658897_566202_1573659544.png" srcset="ID1573658897_566202_1573659544.png 1x, ID1573658897_566202_1573659544@2x.png 2x">
+	<div id="Grupo_347">
+		<div id="content">
+			<div id="Descripcion">
+				<span>Descripcion</span>
+			</div>
+		</div>
+	</div>
+	<div id="Grupo_404">
+		<div id="Lorem_ipsum_dolor_sit_amet__co">
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis, ligula at aliquam tempus, orci felis sollicitudin nulla, eget congue velit massa vitae mauris. Nulla facilisi. Sed in mauris eu felis accumsan placerat ac non velit. Vivamus consectetur in dui ut pretium. Quisque mauris nisl, congue nec nisi vel, blandit.</span>
+		</div>
+	</div>
+	<img id="ID1817633" src="ID1817633.png" srcset="ID1817633.png 1x, ID1817633@2x.png 2x">
+	<img id="ID1817633_e" src="ID1817633_e.png" srcset="ID1817633_e.png 1x, ID1817633_e@2x.png 2x">
+	<img id="ID1817633_fa" src="ID1817633_fa.png" srcset="ID1817633_fa.png 1x, ID1817633_fa@2x.png 2x">
+	<img id="ID1817633_fb" src="ID1817633_fb.png" srcset="ID1817633_fb.png 1x, ID1817633_fb@2x.png 2x">
+</div>
+</body>
+</html>
